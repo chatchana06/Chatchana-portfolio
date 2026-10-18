@@ -117,7 +117,6 @@
             box-shadow: 0 14px 34px -8px rgba(0, 0, 0, 0.5);
         }
 
-        /* macOS Window Top Bar */
         .browser-bar {
             background: #f1efe9;
             border-bottom: 1.5px solid #141413;
@@ -132,7 +131,6 @@
             border-bottom-color: rgba(148, 163, 184, 0.35);
         }
 
-        /* Folder Tab Header for Case Studies */
         .folder-tab {
             display: inline-flex;
             align-items: center;
@@ -154,7 +152,6 @@
             border-color: rgba(148, 163, 184, 0.4);
         }
 
-        /* Figma-style Selection Box */
         .selection-box {
             border: 1.5px solid #f43f5e;
             background: rgba(244, 63, 94, 0.03);
@@ -168,7 +165,6 @@
             position: absolute;
         }
 
-        /* Floating macOS Folder Badge */
         .mac-folder {
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
             cursor: pointer;
@@ -247,6 +243,16 @@
         }
         .dark .tour-spotlight-highlight {
             background-color: #1f2937 !important;
+        }
+
+        @keyframes chartPulseGlow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.95), 0 0 25px rgba(236, 72, 153, 0.7); border-color: #ec4899; }
+            50% { box-shadow: 0 0 0 14px rgba(236, 72, 153, 0), 0 0 40px rgba(236, 72, 153, 0.9); border-color: #f472b6; }
+        }
+        .chart-spotlight-highlight {
+            animation: chartPulseGlow 1.2s infinite ease-in-out !important;
+            position: relative !important;
+            z-index: 215 !important;
         }
 
         #tour-spotlight-backdrop {
@@ -542,13 +548,13 @@
                         </div>
                         <div class="flex flex-wrap items-center gap-3">
                             <span class="px-3 py-1 rounded-full bg-amber-100/90 dark:bg-pink-950 text-ink dark:text-pink-200 font-bold border border-ink dark:border-pink-700 text-[11px]">
-                                ✦ BSc 1st Class Hons (UK) &amp; SMU Postgraduate
+                                ✦ MPA (SMU Singapore) • BSc 1st Class Hons (UK)
+                            </span>
+                            <span class="logo-nobg">
+                                <img src="https://i.postimg.cc/httyvbVS/IMG-3191.jpg" alt="SMU Singapore" class="h-9 sm:h-11 w-auto object-contain rounded-md transition-transform hover:scale-105" />
                             </span>
                             <span class="logo-nobg">
                                 <img src="https://i.postimg.cc/vZZqTL5G/IMG-3190.png" alt="Coventry University UK" class="h-10 sm:h-12 w-auto object-contain transition-transform hover:scale-105" />
-                            </span>
-                            <span class="logo-nobg">
-                                <img src="https://i.postimg.cc/httyvbVS/IMG-3191.jpg" alt="Singapore Management University" class="h-10 sm:h-12 w-auto object-contain transition-transform hover:scale-105" />
                             </span>
                         </div>
                     </div>
@@ -697,14 +703,14 @@
                                 MY WORK INCLUDES
                             </h2>
                             <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
-                                Combining a <strong class="text-ink dark:text-white">First-Class Honours degree (Coventry University, UK)</strong> and <strong class="text-ink dark:text-white">SMU admission</strong> with hands-on campaign execution—turning market research (R&amp;D), unit-cost pricing, and multi-channel promotions into measurable top-line growth.
+                                Combining a <strong class="text-ink dark:text-white">Master of Professional Accounting (MPA, SMU Singapore)</strong> and a <strong class="text-ink dark:text-white">First-Class Honours degree (Coventry University, UK)</strong> in Accounting and Finance with hands-on campaign execution, turning market research (R&amp;D), unit-cost pricing, and multi-channel promotions into measurable top-line growth.
                             </p>
                             <div class="flex flex-wrap items-center gap-4 pt-1">
                                 <span class="logo-nobg">
-                                    <img src="https://i.postimg.cc/vZZqTL5G/IMG-3190.png" alt="Coventry University UK" class="h-12 sm:h-14 w-auto object-contain" />
+                                    <img src="https://i.postimg.cc/httyvbVS/IMG-3191.jpg" alt="SMU Singapore" class="h-11 sm:h-13 w-auto object-contain rounded-md" />
                                 </span>
                                 <span class="logo-nobg">
-                                    <img src="https://i.postimg.cc/httyvbVS/IMG-3191.jpg" alt="Singapore Management University" class="h-12 sm:h-14 w-auto object-contain" />
+                                    <img src="https://i.postimg.cc/vZZqTL5G/IMG-3190.png" alt="Coventry University UK" class="h-12 sm:h-14 w-auto object-contain" />
                                 </span>
                             </div>
                         </div>
@@ -863,7 +869,7 @@
                                             Full-Funnel Campaign Architecture &amp; Paid Acquisition
                                         </h4>
                                         <p id="skill-desc" class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 leading-relaxed">
-                                            Designing high-conversion promotional ecosystems that balance customer acquisition cost (CAC) with basket-size expansion—combining targeted paid social ads, local SEO discovery, and viral customer referral loops.
+                                            Designing high-conversion promotional campaigns that balance customer acquisition cost (CAC) with basket-size growth by combining targeted social ads, local SEO, and customer referral programs.
                                         </p>
                                         <div class="pt-1">
                                             <div class="flex justify-between text-[10px] font-mono font-bold text-stone-500 mb-1">
@@ -943,11 +949,11 @@
                             </div>
 
                             <p class="text-stone-600 dark:text-stone-300 text-xs sm:text-sm leading-relaxed">
-                                Spearheaded <strong class="text-ink dark:text-white">signature menu R&amp;D, cost-backed promotional bundling, and proactive LINE OA &amp; Facebook marketing</strong>—driving a <strong class="text-pink-600 dark:text-pink-400">+28.6% weekly sales surge (Aug '24)</strong>, an <strong class="text-pink-600 dark:text-pink-400">+86.4% net sales leap (Sep–Oct '24)</strong>, and sustained <strong class="text-pink-600 dark:text-pink-400">+33.1% growth (Nov '24)</strong>.
+                                Led <strong class="text-ink dark:text-white">signature menu R&amp;D, cost-backed promotional bundling, and proactive LINE OA &amp; Facebook marketing</strong>, achieving a <strong class="text-pink-600 dark:text-pink-400">+28.6% weekly sales surge (Aug '24)</strong>, an <strong class="text-pink-600 dark:text-pink-400">+86.4% net sales leap (Sep to Oct '24)</strong>, and sustained <strong class="text-pink-600 dark:text-pink-400">+33.1% growth (Nov '24)</strong>.
                             </p>
                         </div>
 
-                        <!-- Compact Tools Strip for Cafe -->
+                        <!-- Compact Tools Strip for Cafe with Inspection Modals -->
                         <div class="lg:col-span-5 p-4 rounded-2xl bg-stone-50 dark:bg-slate-800 border-2 border-ink dark:border-slate-700 flex flex-wrap items-center gap-2.5">
                             <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-ink dark:text-white w-full mb-0.5">
                                 PLATFORMS &amp; MARKETING TOOLS EXECUTED (CLICK TO INSPECT):
@@ -969,7 +975,7 @@
                         <div class="lg:col-span-5 space-y-1">
                             <span class="font-mono text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-ink text-white inline-block">THE CHALLENGE &amp; STRATEGY</span>
                             <p class="text-xs text-stone-600 dark:text-stone-300 leading-relaxed pt-0.5">
-                                Needed to lift average basket size and repeat orders while keeping strict food-cost margins—formulating signature Oregano Pies, calorie-counted menus, and "Check-in for Free Pie" campaigns.
+                                Focused on increasing average basket size and repeat orders while maintaining strict food-cost margins by developing signature Oregano Pies, calorie-counted menus, and "Check-in for Free Pie" promotions.
                             </p>
                         </div>
                         <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-2">
@@ -1088,20 +1094,20 @@
                                 REAL ESTATE BY PP GROUP
                             </h3>
                             <p class="text-stone-600 dark:text-stone-300 text-xs sm:text-sm leading-relaxed pt-1">
-                                Managed <strong class="text-ink dark:text-white">on-site property feasibility, targeted Facebook Ads, and seasonal dynamic pricing</strong> across a 10-property portfolio—earning <strong class="text-pink-600 dark:text-pink-400">Airbnb Superhost status</strong> with near year-round occupancy and a <strong class="text-ink dark:text-white">4.8–5.0 star guest rating</strong>.
+                                Managed <strong class="text-ink dark:text-white">on-site property feasibility, targeted Facebook Ads, and seasonal dynamic pricing</strong> across a 10-property portfolio, earning <strong class="text-pink-600 dark:text-pink-400">Airbnb Superhost status</strong> with consistent year-round occupancy and a <strong class="text-ink dark:text-white">4.8 to 5.0 star guest rating</strong>.
                             </p>
                         </div>
 
-                        <!-- Platform Executed Strip for Real Estate (with exact user URLs) -->
+                        <!-- Real Estate Platform Executed Strip with exact links -->
                         <div class="lg:col-span-5 p-4 rounded-2xl bg-stone-50 dark:bg-slate-800 border-2 border-ink dark:border-slate-700 flex flex-wrap items-center gap-2.5">
                             <span class="text-[10px] font-mono font-bold uppercase tracking-wider text-ink dark:text-white w-full mb-0.5">
                                 PROPERTY LISTING &amp; AD PLATFORMS EXECUTED (CLICK TO INSPECT):
                             </span>
                             <span onclick="inspectRealEstateTool('Facebook Ads', 'Facebook Ads Manager used to target potential home buyers and tourists with high-converting property walkthroughs and ad campaigns.', 'https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg')" class="tool-badge-pill" title="Click to inspect Facebook Ads"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook Ads" class="h-6 w-6 object-contain" /></span>
-                            <span onclick="inspectRealEstateTool('Meta Business Suite', 'Meta Business Suite for managing multi-channel ad placements, audience targeting analytics, and direct messaging enquiries.', 'https://i.postimg.cc/Dzbc4C0c/IMG-3199.png')" class="tool-badge-pill" title="Click to inspect Meta Business Suite"><img src="https://i.postimg.cc/Dzbc4C0c/IMG-3199.png" alt="Meta Business Suite" class="h-6 w-auto max-w-[68px] object-contain rounded-sm" /></span>
-                            <span onclick="inspectRealEstateTool('Google Ads', 'Google Ads performance campaigns targeting high-intent property investors and vacationers searching for Pattaya rentals.', 'https://i.postimg.cc/SKzGYZRY/IMG-3200.jpg')" class="tool-badge-pill" title="Click to inspect Google Ads"><img src="https://i.postimg.cc/SKzGYZRY/IMG-3200.jpg" alt="Google Ads" class="h-6 w-auto max-w-[68px] object-contain rounded-sm" /></span>
                             <span onclick="inspectRealEstateTool('Airbnb', 'Airbnb hosting platform dashboard for managing guest messaging, dynamic pricing, and maintaining Superhost status across 10 properties.', 'https://i.postimg.cc/sg3QMNkh/IMG-3202.png')" class="tool-badge-pill" title="Click to inspect Airbnb"><img src="https://i.postimg.cc/sg3QMNkh/IMG-3202.png" alt="Airbnb" class="h-6 w-auto max-w-[68px] object-contain rounded-sm" /></span>
+                            <span onclick="inspectRealEstateTool('Meta Business Suite', 'Meta Business Suite for managing multi-channel ad placements, audience targeting analytics, and direct messaging enquiries.', 'https://i.postimg.cc/Dzbc4C0c/IMG-3199.png')" class="tool-badge-pill" title="Click to inspect Meta Business Suite"><img src="https://i.postimg.cc/Dzbc4C0c/IMG-3199.png" alt="Meta Business Suite" class="h-6 w-auto max-w-[68px] object-contain rounded-sm" /></span>
                             <span onclick="inspectRealEstateTool('Facebook Marketplace', 'Facebook Marketplace listings optimized for local buyers and renters searching for prime residential condos.', 'https://i.postimg.cc/BnJLjVrH/IMG-3204.jpg')" class="tool-badge-pill" title="Click to inspect Facebook Marketplace"><img src="https://i.postimg.cc/BnJLjVrH/IMG-3204.jpg" alt="Facebook Marketplace" class="h-6 w-auto max-w-[68px] object-contain rounded-sm" /></span>
+                            <span onclick="inspectRealEstateTool('Google Ads', 'Google Ads performance campaigns targeting high-intent property investors and vacationers searching for Pattaya rentals.', 'https://i.postimg.cc/SKzGYZRY/IMG-3200.jpg')" class="tool-badge-pill" title="Click to inspect Google Ads"><img src="https://i.postimg.cc/SKzGYZRY/IMG-3200.jpg" alt="Google Ads" class="h-6 w-auto max-w-[68px] object-contain rounded-sm" /></span>
                             <span onclick="inspectRealEstateTool('DDproperty by Guruproperty', 'DDproperty platform used to list and syndicate prime residential listings for maximum buyer reach and lead generation.', 'https://i.postimg.cc/RZv6WDkt/IMG-3206.png')" class="tool-badge-pill" title="Click to inspect DDproperty"><img src="https://i.postimg.cc/RZv6WDkt/IMG-3206.png" alt="DDproperty" class="h-6 w-auto max-w-[68px] object-contain rounded-sm" /></span>
                         </div>
                     </div>
@@ -1269,14 +1275,14 @@
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
                         <div class="lg:col-span-5 rounded-2xl bg-stone-50 dark:bg-slate-800/90 border-2 border-ink dark:border-slate-700 overflow-hidden shadow-sticker">
                             <div class="metric-card-header">
-                                <span>KEY LEADERSHIP &amp; PR IMPACT</span>
-                                <span class="text-butter">UK • SG • TH</span>
+                               <span>KEY LEADERSHIP &amp; PR IMPACT</span>
+                                <span class="text-butter">UK • TH</span>
                             </div>
                             <div class="p-4 space-y-2.5">
                                 <ul class="text-xs text-stone-700 dark:text-stone-300 space-y-2 list-disc list-inside leading-relaxed">
-                                    <li><strong class="text-ink dark:text-white">CU Student Union (UK):</strong> Project Lead &amp; Treasurer—directed promotional campaigns, cross-functional teams, and full club budgets.</li>
-                                    <li><strong class="text-ink dark:text-white">Rotary Exchange (RYE) Advisor &amp; Mediator:</strong> Designed cultural bonding activities and acted as the bilingual mediator between 8 exchange students and host families.</li>
-                                    <li><strong class="text-ink dark:text-white">RYLA Delegate:</strong> Nominated by the executive board to facilitate cross-cultural leadership collaboration.</li>
+                                    <li><strong class="text-ink dark:text-white">CU Student Union (UK):</strong> Project Lead &amp; Treasurer. Directed promotional campaigns, student committees, and full club budgets.</li>
+                                    <li><strong class="text-ink dark:text-white">Rotary Exchange (RYE) Advisor &amp; Mediator:</strong> Organized cultural bonding activities and acted as the bilingual coordinator between 8 exchange students and host families.</li>
+                                    <li><strong class="text-ink dark:text-white">RYLA Delegate:</strong> Selected by the executive board to represent the club and support international leadership workshops.</li>
                                 </ul>
                             </div>
                         </div>
@@ -1317,7 +1323,7 @@
                                 LET'S WORK TOGETHER!
                             </h2>
                             <p class="text-sm sm:text-base text-stone-600 dark:text-stone-300 leading-relaxed max-w-2xl">
-                                Whether you're looking for a <strong class="text-ink dark:text-white">Marketing &amp; Brand Strategy Intern</strong>, a <strong class="text-ink dark:text-white">Commercial Growth Analyst</strong>, or a creative mind backed by <strong class="text-ink dark:text-white">First-Class Honours (UK) &amp; SMU Accounting rigor</strong>—reach out directly via WhatsApp, LinkedIn, or Email below!
+                                Whether you are looking for a <strong class="text-ink dark:text-white">Marketing &amp; Brand Strategy</strong> team member, a <strong class="text-ink dark:text-white">Commercial Growth Analyst</strong>, or a creative mind backed by a <strong class="text-ink dark:text-white">First-Class Honours (UK) Accounting background</strong>, feel free to reach out directly via WhatsApp, LinkedIn, or Email below!
                             </p>
 
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
@@ -1334,7 +1340,7 @@
                                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-ink dark:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
                                 </a>
 
-                                <a href="https://www.linkedin.com/in/chatchana-phoplap-902455348?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" class="btn-cream-sticker p-4 rounded-2xl flex items-center justify-between group hover:bg-blue-50 dark:hover:bg-slate-800">
+                                <a href="https://www.linkedin.com/in/chatchana-phoplap-902455348" target="_blank" rel="noopener noreferrer" class="btn-cream-sticker p-4 rounded-2xl flex items-center justify-between group hover:bg-blue-50 dark:hover:bg-slate-800">
                                     <div class="flex items-center gap-3.5">
                                         <div class="w-12 h-12 rounded-xl bg-white border-2 border-ink flex items-center justify-center p-2.5 shadow-sm group-hover:scale-110 transition-transform">
                                             <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" class="w-full h-full object-contain" />
@@ -1347,7 +1353,7 @@
                                     <i data-lucide="arrow-up-right" class="w-5 h-5 text-ink dark:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
                                 </a>
 
-                                <a href="mailto:chatchanaphoplap@gmail.com?subject=Contact%20from%20Portfolio" onclick="handleEmailClick(event)" class="btn-cream-sticker p-4 rounded-2xl flex items-center justify-between group hover:bg-pink-50 dark:hover:bg-slate-800">
+                                <button onclick="handleEmailClick(event)" class="btn-cream-sticker p-4 rounded-2xl flex items-center justify-between group hover:bg-pink-50 dark:hover:bg-slate-800 text-left">
                                     <div class="flex items-center gap-3 min-w-0 flex-1 pr-1">
                                         <div class="w-11 h-11 rounded-xl bg-white border-2 border-ink flex items-center justify-center p-2 shadow-sm group-hover:scale-110 transition-transform shrink-0">
                                             <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" class="w-full h-full object-contain" />
@@ -1358,7 +1364,7 @@
                                         </div>
                                     </div>
                                     <i data-lucide="arrow-up-right" class="w-4 h-4 text-ink dark:text-white shrink-0 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-                                </a>
+                                </button>
 
                                 <button onclick="openCVModal()" class="btn-pink-glossy p-4 rounded-2xl flex items-center justify-between group text-left">
                                     <div class="flex items-center gap-3.5">
@@ -1375,9 +1381,9 @@
                             </div>
                         </div>
 
-                        <!-- Kawaii Animated Hello Kitty Cat Illustration (Transparent background, larger, bouncy winking, kissing, peace sign sketch matching user reference) -->
+                        <!-- Animated Hello Kitty Mascot (Transparent, Larger, Bouncing Winking & Kissing with Peace Sign matching user reference) -->
                         <div class="lg:col-span-4 flex flex-col items-center justify-center text-center p-6 rounded-2xl bg-stone-50 dark:bg-slate-800 border-2 border-ink dark:border-slate-700 shadow-sticker relative">
-                            <div class="w-72 h-72 sm:w-80 sm:h-80 rounded-2xl flex flex-col items-center justify-center p-1 relative overflow-visible group animated-hello-cat">
+                            <div class="w-80 h-80 sm:w-96 sm:h-96 rounded-2xl flex flex-col items-center justify-center p-1 relative overflow-visible group animated-hello-cat">
                                 <svg viewBox="0 0 190 190" class="w-full h-full drop-shadow-xl overflow-visible">
                                     <!-- Pink Bow on Left Ear -->
                                     <g transform="translate(38, 14) rotate(-18)">
@@ -1424,7 +1430,6 @@
         </div>
     </footer>
 
-    <!-- Modals & Lightboxes -->
     <div id="modal-backdrop" class="fixed inset-0 z-50 bg-stone-900/40 backdrop-blur-[2px] hidden items-center justify-center p-4">
         <div class="bg-white dark:bg-slate-900 rounded-[28px] max-w-4xl w-full p-6 sm:p-8 border-2 border-ink dark:border-slate-700 shadow-sticker relative max-h-[90vh] overflow-y-auto">
             <button onclick="closeModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-pink-100 dark:bg-slate-800 border border-ink dark:border-slate-600 text-ink dark:text-white hover:bg-pink-300 flex items-center justify-center">
@@ -1527,7 +1532,7 @@
             }
             showToast("Email copied to clipboard: " + email);
             setTimeout(() => {
-                window.location.href = "mailto:" + email + "?subject=Contact%20from%20Portfolio";
+                window.location.href = "mailto:" + email + "?subject=Inquiry%20Regarding%20Marketing%20Portfolio";
             }, 300);
         }
 
@@ -1622,8 +1627,8 @@
                 blurType: "none"
             },
             {
-                title: "4. Click Graphics & Photos to Zoom 📸",
-                desc: "Click directly on any sales chart or photo in the project galleries to view them full-screen with left/right carousel arrows!",
+                title: "4. Click Sales Charts & Photos to Zoom 📸",
+                desc: "Click directly on these sales charts in Case Study 01 to view them full-screen with left/right carousel arrows!",
                 target: "cafe-sales-charts-container",
                 position: "above",
                 demo: null,
@@ -1725,6 +1730,9 @@
             const bubble = document.getElementById('tour-bubble-card');
             bubble.classList.remove('hidden');
 
+            const chartsContainerEl = document.getElementById('cafe-sales-charts-container');
+            if (chartsContainerEl) chartsContainerEl.classList.remove('chart-spotlight-highlight');
+
             if (!step.target || step.position === 'center') {
                 const heroEl = document.getElementById('hero');
                 if (heroEl) heroEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -1740,6 +1748,9 @@
                     targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     setTimeout(() => {
                         targetEl.classList.add('tour-spotlight-highlight');
+                        if (step.target === 'cafe-sales-charts-container') {
+                            chartsContainerEl.classList.add('chart-spotlight-highlight');
+                        }
                         const rect = targetEl.getBoundingClientRect();
                         const bubbleRect = bubble.getBoundingClientRect();
                         
@@ -1776,6 +1787,8 @@
                     if (el) el.classList.remove('tour-spotlight-highlight');
                 }
             });
+            const chartsContainerEl = document.getElementById('cafe-sales-charts-container');
+            if (chartsContainerEl) chartsContainerEl.classList.remove('chart-spotlight-highlight');
             const headerEl = document.getElementById('main-site-header');
             headerEl.style.zIndex = '220';
         }
@@ -1799,9 +1812,9 @@
 
         const lightboxGalleryMap = {
             'cafe': [
-                { url: 'https://i.postimg.cc/25tZpJpG/IMG-2491.jpg', caption: 'Phusit Cafe — Sales Growth Chart 1' },
-                { url: 'https://i.postimg.cc/jj17V9Vv/IMG-2493.jpg', caption: 'Phusit Cafe — Sales Growth Chart 2' },
-                { url: 'https://i.postimg.cc/HxhRDRqF/IMG-2671.jpg', caption: 'Phusit Nungchill Cafe — Verified Sales Growth Chart 3' },
+                { url: 'https://i.postimg.cc/25tZpJpG/IMG-2491.jpg', caption: 'Phusit Cafe: Sales Growth Chart 1' },
+                { url: 'https://i.postimg.cc/jj17V9Vv/IMG-2493.jpg', caption: 'Phusit Cafe: Sales Growth Chart 2' },
+                { url: 'https://i.postimg.cc/HxhRDRqF/IMG-2671.jpg', caption: 'Phusit Nungchill Cafe: Verified Sales Growth Chart 3' },
                 { url: 'https://i.postimg.cc/CLqygn31/IMG-0443.jpg', caption: 'Cafe Asset New 01' },
                 { url: 'https://i.postimg.cc/QdG2xxD9/IMG-0492.jpg', caption: 'Cafe Asset New 02' },
                 { url: 'https://i.postimg.cc/Z5tGKKmJ/IMG-1857.jpg', caption: 'Cafe Asset New 03' },
@@ -1857,12 +1870,12 @@
                 { url: 'https://i.postimg.cc/DwSt52RH/IMG-2684.png', caption: 'Real Estate Review 08' }
             ],
             'insurance': [
-                { url: 'https://i.postimg.cc/zvnzL1ZQ/IMG-3198.jpg', caption: 'Phusit Insurance — Official Brand Emblem' }
+                { url: 'https://i.postimg.cc/zvnzL1ZQ/IMG-3198.jpg', caption: 'Phusit Insurance: Official Brand Emblem' }
             ],
             'leadership': [
-                { url: 'https://i.postimg.cc/yYH2RDqw/IMG-2685.jpg', caption: 'CU Student Club — Project Lead & Treasurer' },
-                { url: 'https://i.postimg.cc/VL82tJQc/IMG-2697.jpg', caption: 'RYLA Leadership — Club Representative Certificate' },
-                { url: 'https://i.postimg.cc/65XFZ8Jx/IMG-2698.jpg', caption: 'Rotary Exchange — Advisor & PR Strategy' },
+                { url: 'https://i.postimg.cc/yYH2RDqw/IMG-2685.jpg', caption: 'CU Student Club: Project Lead & Treasurer' },
+                { url: 'https://i.postimg.cc/VL82tJQc/IMG-2697.jpg', caption: 'RYLA Leadership: Club Representative Certificate' },
+                { url: 'https://i.postimg.cc/65XFZ8Jx/IMG-2698.jpg', caption: 'Rotary Exchange: Advisor & PR Strategy' },
                 { url: 'https://i.postimg.cc/NGzPJGP2/IMG-3101.jpg', caption: 'Leadership Asset 01' },
                 { url: 'https://i.postimg.cc/HWhPZWPc/IMG-3102.jpg', caption: 'Leadership Asset 02' },
                 { url: 'https://i.postimg.cc/PfRF3fFP/IMG-3104.jpg', caption: 'Leadership Asset 03' },
@@ -1889,7 +1902,7 @@
                 { url: 'https://i.postimg.cc/0j1g48Vx/IMG-8675.jpg', caption: 'Leadership Asset 24' }
             ],
             'hero': [
-                { url: 'https://i.postimg.cc/x1b5kWVH/9ADF1D9D-4668-47A2-98ED-9CBF78B35501.jpg', caption: 'Chatchana Phoplap (Nepjune) — Marketing & Growth Strategist' }
+                { url: 'https://i.postimg.cc/x1b5kWVH/9ADF1D9D-4668-47A2-98ED-9CBF78B35501.jpg', caption: 'Chatchana Phoplap (Nepjune): Marketing & Growth Strategist' }
             ]
         };
 
@@ -2158,31 +2171,31 @@
                 title: "Full-Funnel Campaign Architecture & Paid Acquisition",
                 level: "OMNI-CHANNEL GROWTH",
                 width: "96%",
-                desc: "Designing high-conversion promotional ecosystems that balance customer acquisition cost (CAC) with basket-size expansion—combining targeted paid social ads, local SEO discovery, and viral customer referral loops."
+                desc: "Designing high-conversion promotional campaigns that balance customer acquisition cost (CAC) with basket-size growth by combining targeted social ads, local SEO, and customer referral programs."
             },
             research: {
                 title: "Consumer Intelligence, Product Ideation & Asset Feasibility",
                 level: "CONSUMER INSIGHTS & FEASIBILITY",
                 width: "95%",
-                desc: "Translating real-time buyer feedback and local market benchmarks into high-margin product launches and physical real estate feasibility models—evaluating renovation ROI, target personas, and long-term commercial viability."
+                desc: "Turning real-time buyer feedback and local market trends into profitable product launches and practical real estate feasibility assessments, evaluating renovation ROI, buyer profiles, and long-term returns."
             },
             pricing: {
                 title: "Full-Cycle Bookkeeping, Corporate Tax & Yield Management",
                 level: "FINANCIAL RIGOR & COMPLIANCE",
                 width: "98%",
-                desc: "Combining hands-on corporate accounting (50+ CIT/VAT tax filings and B2B reconciliation across 33 insurance partners) with unit-economics pricing models, psychological pricing, and seasonal dynamic yield management."
+                desc: "Combining hands-on corporate accounting (50+ CIT/VAT tax filings and B2B reconciliation across 33 insurance partners) with unit-cost pricing, charm pricing, and seasonal yield management."
             },
             outreach: {
                 title: "Automated CRM Retention & Cross-Cultural Mediation",
                 level: "CRM & STAKEHOLDER RELATIONS",
                 width: "94%",
-                desc: "Building proactive digital CRM journeys (automated messaging, loyalty retention, and multi-channel community management) alongside bilingual conflict resolution and international stakeholder relations across the UK, Singapore, and Thailand."
+                desc: "Building proactive digital CRM journeys (automated messaging, loyalty programs, and community management) alongside bilingual communication and international stakeholder relations across the UK, Singapore, and Thailand."
             },
             tools: {
                 title: "Financial Accounting, CRM Systems & Analytics Stack",
-                level: "1ST CLASS HONOURS (UK)",
+                level: "MPA (SMU) & 1ST CLASS HONOURS (UK)",
                 width: "96%",
-                desc: "Advanced proficiency in Microsoft Excel (full-cycle bookkeeping, tax schedules, ROI modeling), Thai Revenue Department tax filing (CIT/VAT), LINE Official Account CRM, Meta Ads Manager, Google Business Profile SEO, and bilingual English–Thai business communication."
+                desc: "Strong proficiency in Microsoft Excel (full-cycle bookkeeping, tax schedules, ROI tracking), Thai Revenue Department tax filings (CIT/VAT), LINE Official Account CRM, Meta Ads Manager, Google Business Profile SEO, and bilingual English and Thai communication."
             }
         };
 
@@ -2221,43 +2234,43 @@
                     "https://i.postimg.cc/gkqLcsLg/IMG-3235.webp",
                     "https://i.postimg.cc/FsgkFpkC/IMG-3236.png"
                 ],
-                summary: "Led end-to-end commercial marketing, daily backend cost analysis, and omnichannel customer engagement (LINE OA, Facebook & Google Business Profile), translating on-site consumer feedback and unit economics into 4 months of sustained revenue growth.",
+                summary: "Managed commercial marketing, daily backend cost tracking, and multi-channel customer engagement (LINE OA, Facebook, and Google Business Profile), turning customer feedback and cost data into 4 months of steady revenue growth.",
                 bullets: [
-                    "<strong>Consumer Feedback &amp; Menu R&amp;D:</strong> Gathered direct on-site customer feedback and Facebook inbox insights to create high-margin bestsellers (Signature Oregano Pies &amp; Cakes), calorie-calculated healthy menus, and seasonal specials (Christmas cupcakes/jelly, Halloween, Valentine’s, Mother’s Day), complete with in-house food photography and menu graphic design.",
-                    "<strong>Backend Cost Analysis &amp; Charm Pricing:</strong> Conducted daily bookkeeping and unit-cost calculations to design profitable promotions—combining psychological \".9\" charm pricing, cross-selling bundles (Pie/Cake + Drink sets), and volume deals (1-get-1, 2-get-1, 3-get-1 free, 3-for-90 THB, Mother's Day promos, and a \"Check-in &amp; Review for Free Pie\" campaign).",
-                    "<strong>Proactive LINE OA CRM &amp; Page Admin:</strong> Built the cafe’s LINE Official Account from the ground up (custom Rich Menus, automated greeting messages, loyalty stamp cards, and proactive promo broadcasts). Served as Facebook Page Admin handling customer inquiries, running paid ads, and optimizing storefront location pins &amp; Google Business Profile (4.9-star rating, 3,057+ views).",
-                    "<strong>Sustained Multi-Month Commercial Growth:</strong><ul class='pl-5 mt-1.5 space-y-1 list-[circle]'><li><strong>Aug 2024:</strong> Weekly net sales surged +28.62% (THB 13,765), lifting average ticket size to THB 88.81 (+18.67%) across 155 receipts (+8.39%).</li><li><strong>Sep–Oct 2024:</strong> Net sales skyrocketed +86.38% (THB 15,639), with order volume jumping +86.21% (216 receipts).</li><li><strong>Nov 2024:</strong> Maintained strong momentum with +33.13% net sales growth (THB 11,401), +17.09% order volume (137 receipts), and +13.69% average ticket size (THB 83.22).</li></ul>"
+                    "<strong>Consumer Feedback &amp; Menu R&amp;D:</strong> Gathered direct customer feedback and Facebook inbox insights to create high-margin bestsellers (Signature Oregano Pies &amp; Cakes), calorie-calculated healthy options, and seasonal menus (Christmas, Halloween, Valentine’s, and Mother’s Day), along with in-house food photography and menu design.",
+                    "<strong>Backend Cost Analysis &amp; Charm Pricing:</strong> Handled daily bookkeeping and unit-cost calculations to create profitable promotions, using \".9\" charm pricing, cross-selling bundles (Pie/Cake + Drink sets), and volume deals (1-get-1, 2-get-1, 3-get-1 free, 3-for-90 THB, and a \"Check-in &amp; Review for Free Pie\" campaign).",
+                    "<strong>Proactive LINE OA CRM &amp; Page Admin:</strong> Set up the cafe’s LINE Official Account from scratch with custom Rich Menus, automated greeting messages, loyalty stamp cards, and promotional broadcasts. Also managed the Facebook Page, ran targeted ads, and updated the Google Business Profile (4.9-star rating with 3,057+ views).",
+                    "<strong>Sustained Multi-Month Commercial Growth:</strong><ul class='pl-5 mt-1.5 space-y-1 list-[circle]'><li><strong>Aug 2024:</strong> Weekly net sales grew +28.62% (THB 13,765), raising average ticket size to THB 88.81 (+18.67%) across 155 receipts (+8.39%).</li><li><strong>Sep to Oct 2024:</strong> Net sales jumped +86.38% (THB 15,639), with order volume increasing +86.21% (216 receipts).</li><li><strong>Nov 2024:</strong> Maintained strong results with +33.13% net sales growth (THB 11,401), +17.09% order volume (137 receipts), and +13.69% average ticket size (THB 83.22).</li></ul>"
                 ]
             },
             realestate: {
                 badge: "Real Estate by PP Group • Dec 2024 – Apr 2025",
-                title: "Real Estate by PP Group – Airbnb Superhost, Dynamic Pricing & Asset Marketing",
+                title: "Real Estate by PP Group: Airbnb Superhost, Dynamic Pricing & Asset Marketing",
                 toolsLabel: "PROPERTY LISTING & AD PLATFORMS USED:",
                 toolsLogos: [
                     "https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg",
-                    "https://i.postimg.cc/Dzbc4C0c/IMG-3199.png",
-                    "https://i.postimg.cc/SKzGYZRY/IMG-3200.jpg",
                     "https://i.postimg.cc/sg3QMNkh/IMG-3202.png",
+                    "https://i.postimg.cc/Dzbc4C0c/IMG-3199.png",
                     "https://i.postimg.cc/BnJLjVrH/IMG-3204.jpg",
+                    "https://i.postimg.cc/SKzGYZRY/IMG-3200.jpg",
                     "https://i.postimg.cc/RZv6WDkt/IMG-3206.png"
                 ],
-                summary: "Directed end-to-end property marketing, on-site property feasibility evaluations, and Airbnb & social media operations across a 10-property residential and commercial portfolio.",
+                summary: "Managed property marketing, on-site property assessments, and Airbnb and social media listings across a 10-property residential and commercial portfolio.",
                 bullets: [
-                    "<strong>On-Site Asset Inspection &amp; Feasibility Strategy:</strong> Conducted physical condo inspections to evaluate property condition and renovation ROI—determining whether each unit should be renovated, listed for short-term/long-term rental, or positioned for direct sale based on target buyer/tenant personas.",
-                    "<strong>Airbnb Superhost &amp; Seasonal Dynamic Pricing:</strong> Managed end-to-end Airbnb hosting operations, achieving Superhost status, near year-round occupancy, and a consistent 4.8–5.0 star review rating by implementing dynamic pricing models adjusted for High/Low tourism seasons and peak holiday festivals.",
-                    "<strong>Targeted Paid Ads &amp; Location-Driven Copywriting:</strong> Designed promotional graphics and executed targeted Facebook Ads, Marketplace listings, and PropertyGuru syndications for both sales and rentals, crafting persuasive copy around prime Pattaya USPs (walkable beach access, shopping mall proximity, Bali Hai Pier balcony views, and convenient transit)."
+                    "<strong>On-Site Asset Inspection &amp; Feasibility Strategy:</strong> Inspected condos in person to check property condition and renovation costs, deciding whether each unit was best suited for renovation, short-term or long-term rental, or direct sale based on target buyer and tenant profiles.",
+                    "<strong>Airbnb Superhost &amp; Seasonal Dynamic Pricing:</strong> Handled daily Airbnb hosting operations, earning Superhost status, steady year-round occupancy, and a 4.8 to 5.0 star guest rating by adjusting rates for high and low tourism seasons and local holidays.",
+                    "<strong>Targeted Paid Ads &amp; Location-Driven Copywriting:</strong> Created promotional graphics and ran Facebook Ads, Marketplace listings, and DDproperty posts for both sales and rentals, writing clear copy that highlighted prime Pattaya locations (beach access, nearby malls, Bali Hai Pier views, and easy transport)."
                 ]
             },
             insurance: {
                 badge: "Phusit Insurance • Tax & Accounting Associate",
                 title: "Full-Cycle Bookkeeping, Corporate Tax Compliance & B2B Partner Reconciliation",
                 brandLogo: "https://i.postimg.cc/zvnzL1ZQ/IMG-3198.jpg",
-                summary: "Managed end-to-end financial accounting, statutory tax filings, and B2B billing reconciliation across an extensive network of 33 multinational and domestic insurance providers.",
+                summary: "Handled full-cycle accounting, corporate tax filings, and B2B billing reconciliation across 33 multinational and domestic insurance companies.",
                 bullets: [
-                    "<strong>B2B Premium Reconciliation (33 Insurance Partners):</strong> Executed full-cycle bookkeeping operations and reconciled complex premium accounts across global insurance leaders (Chubb, Allianz, AIG, AXA, ERGO, LMG, Tokio Marine) and top national providers (Viriyah, Bangkok Insurance, Muang Thai, Thanachart, Deves, Navakij, Indara, KPI, Mittare, Thaisri, TSI, and Ngern Tid Lor), ensuring 100% billing accuracy and seamless settlement workflows.",
-                    "<strong>Statutory Tax Compliance (50+ Corporate Filings):</strong> Prepared, audited, and filed 50+ corporate tax returns and compliance schedules—including Corporate Income Tax (CIT) and Value Added Tax (VAT)—maintaining 100% adherence to Thai Revenue Department regulations and zero penalty risks.",
-                    "<strong>Corporate Registration &amp; Partner Administration:</strong> Directed end-to-end administrative documentation for vehicle registration and annual tax renewal services in direct coordination with corporate clients and insurance partners, guaranteeing strict data accuracy and on-time statutory submissions.",
-                    "<strong>Commercial Synergy for Marketing &amp; Strategy:</strong> Leveraged deep accounting and unit-cost expertise to inform commercial pricing, margin analysis, and ROI forecasting across subsequent retail and real estate ventures."
+                    "<strong>B2B Premium Reconciliation (33 Insurance Partners):</strong> Managed full-cycle bookkeeping and reconciled premium accounts across global insurers (Chubb, Allianz, AIG, AXA, ERGO, LMG, Tokio Marine) and major national providers (Viriyah, Bangkok Insurance, Muang Thai, Thanachart, Deves, Navakij, Indara, KPI, Mittare, Thaisri, TSI, and Ngern Tid Lor), maintaining 100% billing accuracy.",
+                    "<strong>Statutory Tax Compliance (50+ Corporate Filings):</strong> Prepared, reviewed, and submitted 50+ corporate tax returns and schedules, including Corporate Income Tax (CIT) and Value Added Tax (VAT), in full compliance with Thai Revenue Department rules.",
+                    "<strong>Corporate Registration &amp; Partner Administration:</strong> Coordinated vehicle registration and annual tax renewal documents directly with corporate clients and insurance partners to ensure accurate and timely submissions.",
+                    "<strong>Commercial Foundation for Marketing &amp; Strategy:</strong> Applied practical accounting and cost-tracking skills to build realistic pricing, margin calculations, and ROI forecasts in retail and real estate projects."
                 ]
             },
             events: {
@@ -2268,11 +2281,11 @@
                     "https://i.postimg.cc/KjNXSchV/IMG-3210.png",
                     "https://i.postimg.cc/T198M2vF/IMG-3211.png"
                 ],
-                summary: "A multi-year track record of leading university event operations and budgeting in the UK while driving cross-cultural mediation and stakeholder relations for Rotary International in Thailand.",
+                summary: "Experience leading university student events and club budgets in the UK while supporting cross-cultural coordination and student relations for Rotary International in Thailand.",
                 bullets: [
-                    "<strong>CU Student Union (Project Lead &amp; Treasurer):</strong> Led end-to-end event planning, campus promotional campaigns, and full financial budgeting for cultural and social events under strict deadlines, coordinating diverse student committees.",
-                    "<strong>Cultural Integration &amp; Activity Design (Rotary RYE):</strong> Designed and hosted ice-breaking and relationship-building activities for 8 international exchange students—including cultural food parties, swimming outings, local sightseeing trips, and casual bonding nights—to help students overcome homesickness and adapt smoothly.",
-                    "<strong>Bilingual Conflict Resolution &amp; Host Family Mediation:</strong> Served as the trusted bilingual bridge between international exchange students and local host families—listening to personal concerns, resolving lifestyle misunderstandings with 100% translation accuracy, and advising the Rotary Club President on retention and communication strategies to maintain harmonious host-student relationships."
+                    "<strong>CU Student Union (Project Lead &amp; Treasurer):</strong> Managed event planning, campus promotions, and club budgets for cultural and social events, working closely with student committee members.",
+                    "<strong>Cultural Integration &amp; Activity Design (Rotary RYE):</strong> Organized welcome events and group activities for 8 international exchange students, including cultural dinners, local trips, and casual meetups to help them settle in comfortably.",
+                    "<strong>Bilingual Communication &amp; Host Family Support:</strong> Acted as a bilingual point of contact between exchange students and local host families, helping resolve everyday misunderstandings clearly and supporting the Rotary Club President with student communications."
                 ]
             }
         };
@@ -2354,21 +2367,42 @@
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 text-xs">
                         <div class="lg:col-span-5 space-y-4">
                             <div class="p-4 rounded-2xl bg-blush/70 dark:bg-slate-800 border border-pink-200 dark:border-slate-700 space-y-3">
-                                <h4 class="font-display font-extrabold text-base text-ink dark:text-white border-b border-pink-200 dark:border-slate-700 pb-2">🎓 Academic Background (SG &amp; UK)</h4>
-                                <div class="space-y-1">
-                                    <span class="font-mono text-[10px] font-bold text-pink-600 dark:text-pink-400">Aug 2027 – Nov 2028</span>
-                                    <p class="font-display font-bold text-sm text-ink dark:text-white">SINGAPORE MANAGEMENT UNIVERSITY</p>
-                                    <p class="font-semibold text-stone-700 dark:text-stone-300">Master of Professional Accounting (MPA)</p>
-                                    <p class="text-stone-500">Admitted; Commencing August 2027 • Singapore</p>
-                                </div>
-                                <div class="pt-2 border-t border-pink-200/60 dark:border-slate-700 space-y-1">
-                                    <div class="flex items-center justify-between">
-                                        <span class="font-mono text-[10px] font-bold text-stone-500">Dec 2024 – Jul 2026</span>
-                                        <span class="px-2 py-0.5 rounded-full bg-pink-500 text-white font-mono text-[9px] font-bold">First-Class Honours ★</span>
+                                <h4 class="font-display font-extrabold text-base text-ink dark:text-white border-b border-pink-200 dark:border-slate-700 pb-2">Academic Background (SG &amp; UK)</h4>
+                                <div class="space-y-3">
+                                    <div class="space-y-1.5 p-3 rounded-xl bg-white dark:bg-slate-900 border border-stone-200 dark:border-slate-700">
+                                        <div class="flex items-center justify-between">
+                                            <span class="font-mono text-[10px] font-bold text-stone-500">Aug 2027 – Nov 2028</span>
+                                            <span class="px-2 py-0.5 rounded-full bg-ink text-white dark:bg-pink-500 font-mono text-[9px] font-bold">Postgraduate MPA</span>
+                                        </div>
+                                        <div class="flex items-center gap-3 pt-1">
+                                            <div class="w-10 h-10 rounded-lg bg-stone-50 border border-stone-200 p-1 flex items-center justify-center shrink-0">
+                                                <img src="https://i.postimg.cc/httyvbVS/IMG-3191.jpg" alt="SMU Logo" class="w-full h-full object-contain rounded" />
+                                            </div>
+                                            <div>
+                                                <p class="font-display font-bold text-xs sm:text-sm text-ink dark:text-white leading-tight">SINGAPORE MANAGEMENT UNIVERSITY</p>
+                                                <p class="font-semibold text-stone-700 dark:text-stone-300 text-[11px]">Master of Professional Accounting (MPA)</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-stone-500 text-[11px] pt-1">Admitted; Commencing August 2027 • Singapore</p>
+                                        <p class="text-stone-500 text-[11px]">Focus on corporate financial reporting, business analytics, financial strategy, and commercial decision-making.</p>
                                     </div>
-                                    <p class="font-display font-bold text-sm text-ink dark:text-white">COVENTRY UNIVERSITY – United Kingdom</p>
-                                    <p class="font-semibold text-stone-700 dark:text-stone-300">Bachelor of Science with Honours in Accounting and Finance</p>
-                                    <p class="text-stone-500">Strong foundation in commercial analytics, pricing strategy, consumer markets, and corporate performance evaluation.</p>
+
+                                    <div class="p-3 rounded-xl bg-white dark:bg-slate-900 border border-stone-200 dark:border-slate-700 space-y-1.5">
+                                        <div class="flex items-center justify-between">
+                                            <span class="font-mono text-[10px] font-bold text-stone-500">Dec 2024 – Jul 2026</span>
+                                            <span class="px-2 py-0.5 rounded-full bg-pink-500 text-white font-mono text-[9px] font-bold">First-Class Honours ★</span>
+                                        </div>
+                                        <div class="flex items-center gap-3 pt-1">
+                                            <div class="w-10 h-10 rounded-lg bg-stone-50 border border-stone-200 p-1 flex items-center justify-center shrink-0">
+                                                <img src="https://i.postimg.cc/vZZqTL5G/IMG-3190.png" alt="Coventry Logo" class="w-full h-full object-contain rounded" />
+                                            </div>
+                                            <div>
+                                                <p class="font-display font-bold text-xs sm:text-sm text-ink dark:text-white leading-tight">COVENTRY UNIVERSITY (UK)</p>
+                                                <p class="font-semibold text-stone-700 dark:text-stone-300 text-[11px]">BSc (Hons) in Accounting and Finance</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-stone-500 text-[11px] pt-1">Strong foundation in commercial analytics, pricing strategy, consumer markets, and corporate performance evaluation.</p>
+                                    </div>
                                 </div>
                             </div>
 
@@ -2377,7 +2411,7 @@
                                 <div class="space-y-2.5">
                                     <div>
                                         <div class="flex items-center justify-between">
-                                            <p class="font-bold text-ink dark:text-white">Friends of Autism Charitable Trust – SG</p>
+                                            <p class="font-bold text-ink dark:text-white">Friends of Autism Charitable Trust (SG)</p>
                                             <span class="font-mono text-[10px] font-bold text-pink-600 dark:text-pink-400">Jul – Aug 2026</span>
                                         </div>
                                         <p class="text-stone-700 dark:text-stone-300 font-medium">Community Outreach &amp; Advocacy Project Volunteer</p>
@@ -2385,7 +2419,7 @@
                                     </div>
                                     <div class="pt-2 border-t border-stone-200 dark:border-slate-700">
                                         <div class="flex items-center justify-between">
-                                            <p class="font-bold text-ink dark:text-white">Student Union – UK (Thai Student)</p>
+                                            <p class="font-bold text-ink dark:text-white">Student Union (UK Thai Student Society)</p>
                                             <span class="font-mono text-[10px] font-bold text-pink-600 dark:text-pink-400">Aug 2025 – Jun 2026</span>
                                         </div>
                                         <p class="text-stone-700 dark:text-stone-300 font-medium">Project Lead (Aug–Dec 2025) &amp; Treasurer (Jan–Jun 2026)</p>
@@ -2420,7 +2454,7 @@
 
                                 <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-stone-200 dark:border-slate-700 space-y-1.5">
                                     <div class="flex flex-wrap items-center justify-between gap-1">
-                                        <p class="font-display font-bold text-sm text-ink dark:text-white">REAL ESTATE BY PP GROUP – Thailand</p>
+                                        <p class="font-display font-bold text-sm text-ink dark:text-white">REAL ESTATE BY PP GROUP (Thailand)</p>
                                         <span class="px-2 py-0.5 rounded-full bg-pink-100 dark:bg-pink-950 text-pink-700 dark:text-pink-300 font-mono text-[10px] font-semibold">Dec 2024 – Apr 2025</span>
                                     </div>
                                     <p class="text-[11px] font-bold text-pink-600 dark:text-pink-400 uppercase">Real Estate Portfolio Administrator (Promotions &amp; Commercial Strategy)</p>
@@ -2432,7 +2466,7 @@
 
                                 <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-stone-200 dark:border-slate-700 space-y-1.5">
                                     <div class="flex flex-wrap items-center justify-between gap-1">
-                                        <p class="font-display font-bold text-sm text-ink dark:text-white">PHUSIT NUNGCHILL CAFE – Thailand</p>
+                                        <p class="font-display font-bold text-sm text-ink dark:text-white">PHUSIT NUNGCHILL CAFE (Thailand)</p>
                                         <span class="px-2 py-0.5 rounded-full bg-pink-100 dark:bg-pink-950 text-pink-700 dark:text-pink-300 font-mono text-[10px] font-semibold">Aug 2024 – Dec 2024</span>
                                     </div>
                                     <p class="text-[11px] font-bold text-pink-600 dark:text-pink-400 uppercase">Operations Manager (Product R&amp;D, Menu Marketing &amp; Sales Growth)</p>
@@ -2445,7 +2479,7 @@
 
                                 <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-stone-200 dark:border-slate-700 space-y-1.5">
                                     <div class="flex flex-wrap items-center justify-between gap-1">
-                                        <p class="font-display font-bold text-sm text-ink dark:text-white">PHUSIT INSURANCE BROKER CO., LTD – Thailand</p>
+                                        <p class="font-display font-bold text-sm text-ink dark:text-white">PHUSIT INSURANCE BROKER CO., LTD (Thailand)</p>
                                         <span class="px-2 py-0.5 rounded-full bg-pink-100 dark:bg-pink-950 text-pink-700 dark:text-pink-300 font-mono text-[10px] font-semibold">Aug 2021 – Aug 2024</span>
                                     </div>
                                     <p class="text-[11px] font-bold text-stone-500 uppercase">Account Assistant &amp; Corporate Representative</p>
